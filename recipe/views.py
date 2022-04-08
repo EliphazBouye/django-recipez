@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from . import views
+
 
 def home(request):
-    html = "<h1>Hello welcome to recipez app</h1>"
-    return HttpResponse(html)
+    return render(request, 'recipe/home.html', {})
