@@ -122,6 +122,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Django static dirs
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    BASE_DIR / "boot",
+]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
